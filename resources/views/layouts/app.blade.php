@@ -8,8 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'LaraBBSA') - larabbsA</title>
-    <meta name="description" content="@yield('description', 'LaraBBS 爱好者社区')" />
+    <title>@yield('title', 'larabbsA') - larabbsA</title>
+    <meta name="description" content="@yield('description', setting('seo_description', 'larabbsA 社区。'))" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'larabbsA'))" />
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
